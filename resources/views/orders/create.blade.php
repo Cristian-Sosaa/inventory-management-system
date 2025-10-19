@@ -16,7 +16,7 @@
                             <div class="card-header">
                                 <div>
                                     <h3 class="card-title">
-                                        {{ __('Create Order') }}
+                                        {{ __('Crear Orden') }}
                                     </h3>
                                 </div>
 
@@ -32,7 +32,7 @@
                                 <div class="row gx-3 mb-3">
                                     <div class="col-md-4">
                                         <label for="date" class="form-label required">
-                                            {{ __('Order Date') }}
+                                            {{ __('Datos de Orden') }}
                                         </label>
 
                                         <input name="date" id="date" type="date"
@@ -50,16 +50,16 @@
                                     </div>
 
                                     <x-tom-select
-                                        label="Customers"
+                                        label="Clientes"
                                         id="customer_id"
                                         name="customer_id"
-                                        placeholder="Select Customer"
+                                        placeholder="Selecciona un cliente"
                                         :data="$customers"
                                     />
 
                                     <div class="col-md-4">
                                         <label for="reference" class="form-label required">
-                                            {{ __('Reference') }}
+                                            {{ __('Referencia') }}
                                         </label>
 
                                         <input type="text" class="form-control"
@@ -85,7 +85,7 @@
                                 {{--- onclick="return confirm('Are you sure you want to purchase?')" ---}}
                                 {{--- @disabled($errors->isNotEmpty()) ---}}
                                 <button type="submit" class="btn btn-primary">
-                                    {{ __('Create Invoice') }}
+                                    {{ __('Crear Factura') }}
                                 </button>
                             </div>
                         </div>

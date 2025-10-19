@@ -6,7 +6,7 @@
         <div class="row g-2 align-items-center mb-3">
             <div class="col">
                 <h2 class="page-title">
-                    {{ __('Create Product') }}
+                    {{ __('Crear nuevo Producto') }}
                 </h2>
             </div>
         </div>
@@ -28,7 +28,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h3 class="card-title">
-                                    {{ __('Product Image') }}
+                                    {{ __('Imagen del Producto') }}
                                 </h3>
 
                                 <img
@@ -38,7 +38,7 @@
                                 />
 
                                 <div class="small font-italic text-muted mb-2">
-                                    JPG or PNG no larger than 2 MB
+                                    JPG o PNG tamaño maximo de 2 MB
                                 </div>
 
                                 <input
@@ -64,7 +64,7 @@
                             <div class="card-header">
                                 <div>
                                     <h3 class="card-title">
-                                        {{ __('Product Create') }}
+                                        {{ __('Crear Producto') }}
                                     </h3>
                                 </div>
 
@@ -78,9 +78,9 @@
                                 <div class="row row-cards">
                                     <div class="col-md-12">
 
-                                        <x-input name="name"
+                                        <x-input name="nombre"
                                                  id="name"
-                                                 placeholder="Product name"
+                                                 placeholder="Nombre del producto"
                                                  value="{{ old('name') }}"
                                         />
                                     </div>
@@ -88,7 +88,7 @@
                                     <div class="col-sm-6 col-md-6">
                                         <div class="mb-3">
                                             <label for="category_id" class="form-label">
-                                                Product Category
+                                                Categoria del Producto
                                                 <span class="text-danger">*</span>
                                             </label>
 
@@ -108,7 +108,7 @@
                                                         class="form-select @error('category_id') is-invalid @enderror"
                                                 >
                                                     <option selected="" disabled="">
-                                                        Select a category:
+                                                        Selecciona una categoria:
                                                     </option>
 
                                                     @foreach ($categories as $category)
@@ -130,7 +130,7 @@
                                     <div class="col-sm-6 col-md-6">
                                         <div class="mb-3">
                                             <label class="form-label" for="unit_id">
-                                                {{ __('Unit') }}
+                                                {{ __('Unidad') }}
                                                 <span class="text-danger">*</span>
                                             </label>
 
@@ -150,7 +150,7 @@
                                                         class="form-select @error('unit_id') is-invalid @enderror"
                                                 >
                                                     <option selected="" disabled="">
-                                                        Select a unit:
+                                                        Selecciona una unidad:
                                                     </option>
 
                                                     @foreach ($units as $unit)
@@ -169,7 +169,7 @@
 
                                     <div class="col-sm-6 col-md-6">
                                         <x-input type="number"
-                                                 label="Buying Price"
+                                                 label="Precio de compra"
                                                  name="buying_price"
                                                  id="buying_price"
                                                  placeholder="0"
@@ -179,7 +179,7 @@
 
                                     <div class="col-sm-6 col-md-6">
                                         <x-input type="number"
-                                                 label="Selling Price"
+                                                 label="Precio de venta"
                                                  name="selling_price"
                                                  id="selling_price"
                                                  placeholder="0"
@@ -189,7 +189,7 @@
 
                                     <div class="col-sm-6 col-md-6">
                                         <x-input type="number"
-                                                 label="Quantity"
+                                                 label="Cantidad"
                                                  name="quantity"
                                                  id="quantity"
                                                  placeholder="0"
@@ -199,7 +199,7 @@
 
                                     <div class="col-sm-6 col-md-6">
                                         <x-input type="number"
-                                                 label="Quantity Alert"
+                                                 label="Alerta de cantidad"
                                                  name="quantity_alert"
                                                  id="quantity_alert"
                                                  placeholder="0"
@@ -209,7 +209,7 @@
 
                                     <div class="col-sm-6 col-md-6">
                                         <x-input type="number"
-                                                 label="Tax"
+                                                 label="Impuesto"
                                                  name="tax"
                                                  id="tax"
                                                  placeholder="0"
@@ -220,7 +220,7 @@
                                     <div class="col-sm-6 col-md-6">
                                         <div class="mb-3">
                                             <label class="form-label" for="tax_type">
-                                                {{ __('Tax Type') }}
+                                                {{ __('Tipo de Impuesto') }}
                                             </label>
 
                                             <select name="tax_type" id="tax_type"
@@ -247,11 +247,11 @@
                                                 {{ __('Notes') }}
                                             </label>
 
-                                            <textarea name="notes"
+                                            <textarea name="notas"
                                                       id="notes"
                                                       rows="5"
                                                       class="form-control @error('notes') is-invalid @enderror"
-                                                      placeholder="Product notes"
+                                                      placeholder="Notas del producto"
                                             ></textarea>
 
                                             @error('notes')
@@ -266,11 +266,11 @@
 
                             <div class="card-footer text-end">
                                 <x-button.save type="submit">
-                                    {{ __('Save') }}
+                                    {{ __('Guardar') }}
                                 </x-button.save>
 
                                 <x-button.back route="{{ route('products.index') }}">
-                                    {{ __('Cancel') }}
+                                    {{ __('Cancelar') }}
                                 </x-button.back>
                             </div>
                         </div>

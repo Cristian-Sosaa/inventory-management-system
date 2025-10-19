@@ -10,11 +10,11 @@
     <table class="table table-bordered" id="products_table">
         <thead class="thead-dark">
             <tr>
-                <th class="align-middle">Product</th>
-                <th class="align-middle text-center">Quantity</th>
-                <th class="align-middle text-center">Price</th>
+                <th class="align-middle">Producto</th>
+                <th class="align-middle text-center">Cantidad</th>
+                <th class="align-middle text-center">Precio</th>
                 <th class="align-middle text-center">Total</th>
-                <th class="align-middle text-center">Action</th>
+                <th class="align-middle text-center">Accion</th>
             </tr>
         </thead>
 
@@ -132,7 +132,7 @@
             </tr>
             <tr>
                 <th colspan="4" class="align-middle text-end">
-                    Taxes
+                    Impuestos
                 </th>
                 <td width="150" class="align-middle text-center">
                     <input wire:model.blur="taxes" type="number" id="taxes" class="form-control w-75 d-inline" min="0" max="100">
@@ -150,7 +150,7 @@
                     Total
                 </th>
                 <td class="text-center">
-                    {{ Number::currency($total, 'EUR') }}
+                    {{ Number::currency($total, 'USD') }}
                     <input type="hidden" name="total_amount" value="{{ $total }}">
                 </td>
             </tr>

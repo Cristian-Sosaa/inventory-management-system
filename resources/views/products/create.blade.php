@@ -6,7 +6,11 @@
         <div class="row g-2 align-items-center mb-3">
             <div class="col">
                 <h2 class="page-title">
+<<<<<<< HEAD
                     {{ __('Crear nuevo Producto') }}
+=======
+                    {{ __('Crear Producto') }}
+>>>>>>> 1c550d7569e138243d180665b57335e410a7238a
                 </h2>
             </div>
         </div>
@@ -38,7 +42,11 @@
                                 />
 
                                 <div class="small font-italic text-muted mb-2">
+<<<<<<< HEAD
                                     JPG o PNG tamaño maximo de 2 MB
+=======
+                                    JPG o PNG tamaño máximo 2 MB
+>>>>>>> 1c550d7569e138243d180665b57335e410a7238a
                                 </div>
 
                                 <input
@@ -78,7 +86,11 @@
                                 <div class="row row-cards">
                                     <div class="col-md-12">
 
+<<<<<<< HEAD
                                         <x-input name="nombre"
+=======
+                                        <x-input name="Nombre"
+>>>>>>> 1c550d7569e138243d180665b57335e410a7238a
                                                  id="name"
                                                  placeholder="Nombre del producto"
                                                  value="{{ old('name') }}"
@@ -150,7 +162,11 @@
                                                         class="form-select @error('unit_id') is-invalid @enderror"
                                                 >
                                                     <option selected="" disabled="">
+<<<<<<< HEAD
                                                         Selecciona una unidad:
+=======
+                                                        Seleccione una unidad:
+>>>>>>> 1c550d7569e138243d180665b57335e410a7238a
                                                     </option>
 
                                                     @foreach ($units as $unit)
@@ -169,7 +185,11 @@
 
                                     <div class="col-sm-6 col-md-6">
                                         <x-input type="number"
+<<<<<<< HEAD
                                                  label="Precio de compra"
+=======
+                                                 label="Precio de cCompra"
+>>>>>>> 1c550d7569e138243d180665b57335e410a7238a
                                                  name="buying_price"
                                                  id="buying_price"
                                                  placeholder="0"
@@ -179,7 +199,11 @@
 
                                     <div class="col-sm-6 col-md-6">
                                         <x-input type="number"
+<<<<<<< HEAD
                                                  label="Precio de venta"
+=======
+                                                 label="Precio de Venta"
+>>>>>>> 1c550d7569e138243d180665b57335e410a7238a
                                                  name="selling_price"
                                                  id="selling_price"
                                                  placeholder="0"
@@ -199,7 +223,11 @@
 
                                     <div class="col-sm-6 col-md-6">
                                         <x-input type="number"
+<<<<<<< HEAD
                                                  label="Alerta de cantidad"
+=======
+                                                 label="Alerta de Cantidad"
+>>>>>>> 1c550d7569e138243d180665b57335e410a7238a
                                                  name="quantity_alert"
                                                  id="quantity_alert"
                                                  placeholder="0"
@@ -244,14 +272,18 @@
                                     <div class="col-md-12">
                                         <div class="mb-3">
                                             <label for="notes" class="form-label">
-                                                {{ __('Notes') }}
+                                                {{ __('Notas') }}
                                             </label>
 
                                             <textarea name="notas"
                                                       id="notes"
                                                       rows="5"
                                                       class="form-control @error('notes') is-invalid @enderror"
+<<<<<<< HEAD
                                                       placeholder="Notas del producto"
+=======
+                                                      placeholder="Notas sobre el producto"
+>>>>>>> 1c550d7569e138243d180665b57335e410a7238a
                                             ></textarea>
 
                                             @error('notes')

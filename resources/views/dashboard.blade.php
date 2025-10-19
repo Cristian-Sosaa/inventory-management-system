@@ -17,14 +17,22 @@
                     <div class="d-flex gap-2">
                         <a href="{{ route('products.create') }}" class="btn btn-primary d-none d-sm-inline-block">
                             <x-icon.plus/>
+<<<<<<< HEAD
                             Crear nuevo Producto
+=======
+                            Crear nuevo producto
+>>>>>>> 1c550d7569e138243d180665b57335e410a7238a
                         </a>
                         <a href="{{ route('products.create') }}" class="btn btn-primary d-sm-none btn-icon" aria-label="Create new report">
                             <x-icon.plus/>
                         </a>
                         <a href="{{ route('orders.create') }}" class="btn btn-primary d-none d-sm-inline-block">
                             <x-icon.plus/>
+<<<<<<< HEAD
                             Crear nueva Orden
+=======
+                            Crear nuevo pedido
+>>>>>>> 1c550d7569e138243d180665b57335e410a7238a
                         </a>
                         <a href="{{ route('orders.create') }}" class="btn btn-primary d-sm-none btn-icon" aria-label="Create new report">
                             <x-icon.plus/>
@@ -75,7 +83,11 @@
                                         </div>
                                         <div class="col">
                                             <div class="font-weight-medium">
+<<<<<<< HEAD
                                                 {{ $orders }} Ordenes
+=======
+                                                {{ $orders }} Ordernes
+>>>>>>> 1c550d7569e138243d180665b57335e410a7238a
                                             </div>
                                             <div class="text-muted">
                                                 {{ $completedOrders }} {{ __('completadas') }}

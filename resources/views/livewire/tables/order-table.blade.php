@@ -2,7 +2,11 @@
     <div class="card-header">
         <div>
             <h3 class="card-title">
+<<<<<<< HEAD
                 {{ __('Ordenes') }}
+=======
+                {{ __('Ordernes') }}
+>>>>>>> 1c550d7569e138243d180665b57335e410a7238a
             </h3>
         </div>
 
@@ -45,7 +49,11 @@
                     </th>
                     <th scope="col" class="align-middle text-center">
                         <a wire:click.prevent="sortBy('invoice_no')" href="#" role="button">
+<<<<<<< HEAD
                             {{ __('No. Factura ') }}
+=======
+                            {{ __('Numero de Factura') }}
+>>>>>>> 1c550d7569e138243d180665b57335e410a7238a
                             @include('inclues._sort-icon', ['field' => 'invoice_no'])
                         </a>
                     </th>
@@ -57,7 +65,11 @@
                     </th>
                     <th scope="col" class="align-middle text-center">
                         <a wire:click.prevent="sortBy('order_date')" href="#" role="button">
+<<<<<<< HEAD
                             {{ __('Datos') }}
+=======
+                            {{ __('Fecha') }}
+>>>>>>> 1c550d7569e138243d180665b57335e410a7238a
                             @include('inclues._sort-icon', ['field' => 'order_date'])
                         </a>
                     </th>
@@ -103,7 +115,7 @@
                         {{ $order->payment_type }}
                     </td>
                     <td class="align-middle text-center">
-                        {{ Number::currency($order->total, 'EUR') }}
+                        {{ Number::currency($order->total, 'USD') }}
                     </td>
                     <td class="align-middle text-center">
                         <x-status dot color="{{ $order->order_status === \App\Enums\OrderStatus::COMPLETE ? 'green' : 'orange' }}"

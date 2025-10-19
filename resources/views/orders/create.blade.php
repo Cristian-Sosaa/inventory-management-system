@@ -32,7 +32,11 @@
                                 <div class="row gx-3 mb-3">
                                     <div class="col-md-4">
                                         <label for="date" class="form-label required">
+<<<<<<< HEAD
                                             {{ __('Datos de Orden') }}
+=======
+                                            {{ __('Datos de la Orden') }}
+>>>>>>> 1c550d7569e138243d180665b57335e410a7238a
                                         </label>
 
                                         <input name="date" id="date" type="date"

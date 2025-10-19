@@ -3,8 +3,11 @@
         <div class="row text-center align-items-center flex-row-reverse">
             <div class="col-lg-auto ms-lg-auto">
                 <ul class="list-inline list-inline-dots mb-0">
+<<<<<<< HEAD
                     <li class="list-inline-item">
                     </li>
+=======
+>>>>>>> 1c550d7569e138243d180665b57335e410a7238a
                 </ul>
             </div>
 

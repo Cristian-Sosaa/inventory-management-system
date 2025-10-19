@@ -6,10 +6,10 @@
             <div class="row g-2 align-items-center">
                 <div class="col">
                     <div class="page-pretitle">
-                        Overview
+                        Descripción general
                     </div>
                     <h2 class="page-title">
-                        Dashboard
+                        Inicio
                     </h2>
                 </div>
                 <!-- Page title actions -->
@@ -17,14 +17,14 @@
                     <div class="d-flex gap-2">
                         <a href="{{ route('products.create') }}" class="btn btn-primary d-none d-sm-inline-block">
                             <x-icon.plus/>
-                            Add new Product
+                            Crear nuevo producto
                         </a>
                         <a href="{{ route('products.create') }}" class="btn btn-primary d-sm-none btn-icon" aria-label="Create new report">
                             <x-icon.plus/>
                         </a>
                         <a href="{{ route('orders.create') }}" class="btn btn-primary d-none d-sm-inline-block">
                             <x-icon.plus/>
-                            Create new order
+                            Crear nuevo pedido
                         </a>
                         <a href="{{ route('orders.create') }}" class="btn btn-primary d-sm-none btn-icon" aria-label="Create new report">
                             <x-icon.plus/>
@@ -52,10 +52,10 @@
                                         </div>
                                         <div class="col">
                                             <div class="font-weight-medium">
-                                                {{ $products }} Products
+                                                {{ $products }} Productos
                                             </div>
                                             <div class="text-muted">
-                                                {{ $categories }} categories
+                                                {{ $categories }} categorias
                                             </div>
                                         </div>
                                     </div>
@@ -75,7 +75,7 @@
                                         </div>
                                         <div class="col">
                                             <div class="font-weight-medium">
-                                                {{ $orders }} Orders
+                                                {{ $orders }} Ordernes
                                             </div>
                                             <div class="text-muted">
                                                 {{ $completedOrders }} {{ __('completed') }}
@@ -98,10 +98,10 @@
                                         </div>
                                         <div class="col">
                                             <div class="font-weight-medium">
-                                                {{ $purchases }} Purchases
+                                                {{ $purchases }} Compras
                                             </div>
                                             <div class="text-muted">
-                                                {{ $todayPurchases }} today
+                                                {{ $todayPurchases }} hoy
                                             </div>
                                         </div>
                                     </div>
@@ -121,10 +121,10 @@
                                         </div>
                                         <div class="col">
                                             <div class="font-weight-medium">
-                                                {{ $quotations }} Quotations
+                                                {{ $quotations }} Citas
                                             </div>
                                             <div class="text-muted">
-                                                {{ $todayQuotations }} today
+                                                {{ $todayQuotations }} hoy
                                             </div>
                                         </div>
                                     </div>

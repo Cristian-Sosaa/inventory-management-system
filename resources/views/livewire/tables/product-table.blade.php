@@ -59,42 +59,42 @@
             <thead class="thead-light">
                 <tr>
                     <th class="align-middle text-center w-1">
-                        {{ __('No.') }}
+                        {{ __('ID') }}
                     </th>
                     <th scope="col" class="align-middle text-center">
                         <a wire:click.prevent="sortBy('name')" href="#" role="button">
-                            {{ __('Name') }}
+                            {{ __('Nombre') }}
                             @include('inclues._sort-icon', ['field' => 'name'])
                         </a>
                     </th>
                     <th scope="col" class="align-middle text-center">
                         <a wire:click.prevent="sortBy('code')" href="#" role="button">
-                            {{ __('Code') }}
+                            {{ __('Codigo') }}
                             @include('inclues._sort-icon', ['field' => 'code'])
                         </a>
                     </th>
                     <th scope="col" class="align-middle text-center">
                         <a wire:click.prevent="sortBy('category_id')" href="#" role="button">
-                            {{ __('Category') }}
+                            {{ __('Categoria') }}
                             @include('inclues._sort-icon', ['field' => 'category_id'])
                         </a>
                     </th>
                     <th scope="col" class="align-middle text-center">
                         <a wire:click.prevent="sortBy('quantity')" href="#" role="button">
-                            {{ __('Quantity') }}
+                            {{ __('Cantidad') }}
                             @include('inclues._sort-icon', ['field' => 'quantity'])
                         </a>
                     </th>
 
                     <th scope="col" class="align-middle text-center">
                         <a wire:click.prevent="sortBy('quantity_alert')" href="#" role="button">
-                            {{ __('Quantity Alert') }}
+                            {{ __('Alerta de cantidad') }}
                             @include('inclues._sort-icon', ['field' => 'quantity_alert'])
                         </a>
                     </th>
 
                     <th scope="col" class="align-middle text-center">
-                        {{ __('Action') }}
+                        {{ __('Accion') }}
                     </th>
                 </tr>
             </thead>

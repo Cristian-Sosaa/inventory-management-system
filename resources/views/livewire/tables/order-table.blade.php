@@ -2,7 +2,7 @@
     <div class="card-header">
         <div>
             <h3 class="card-title">
-                {{ __('Orders') }}
+                {{ __('Ordernes') }}
             </h3>
         </div>
 
@@ -14,7 +14,7 @@
     <div class="card-body border-bottom py-3">
         <div class="d-flex">
             <div class="text-secondary">
-                Show
+                Mostrar
                 <div class="mx-2 d-inline-block">
                     <select wire:model.live="perPage" class="form-select form-select-sm" aria-label="result per page">
                         <option value="5">5</option>
@@ -23,10 +23,10 @@
                         <option value="25">25</option>
                     </select>
                 </div>
-                entries
+                entradas
             </div>
             <div class="ms-auto text-secondary">
-                Search:
+                Buscar:
                 <div class="ms-2 d-inline-block">
                     <input type="text" wire:model.live="search" class="form-control form-control-sm" aria-label="Search invoice">
                 </div>
@@ -41,29 +41,29 @@
             <thead class="thead-light">
                 <tr>
                     <th class="align-middle text-center w-1">
-                        {{ __('No.') }}
+                        {{ __('ID') }}
                     </th>
                     <th scope="col" class="align-middle text-center">
                         <a wire:click.prevent="sortBy('invoice_no')" href="#" role="button">
-                            {{ __('Invoice No.') }}
+                            {{ __('Numero de Factura') }}
                             @include('inclues._sort-icon', ['field' => 'invoice_no'])
                         </a>
                     </th>
                     <th scope="col" class="align-middle text-center">
                         <a wire:click.prevent="sortBy('customer_id')" href="#" role="button">
-                            {{ __('Customer') }}
+                            {{ __('Cliente') }}
                             @include('inclues._sort-icon', ['field' => 'customer_id'])
                         </a>
                     </th>
                     <th scope="col" class="align-middle text-center">
                         <a wire:click.prevent="sortBy('order_date')" href="#" role="button">
-                            {{ __('Date') }}
+                            {{ __('Fecha') }}
                             @include('inclues._sort-icon', ['field' => 'order_date'])
                         </a>
                     </th>
                     <th scope="col" class="align-middle text-center">
                         <a wire:click.prevent="sortBy('payment_type')" href="#" role="button">
-                            {{ __('Paymet') }}
+                            {{ __('Pago') }}
                             @include('inclues._sort-icon', ['field' => 'payment_type'])
                         </a>
                     </th>
@@ -75,12 +75,12 @@
                     </th>
                     <th scope="col" class="align-middle text-center">
                         <a wire:click.prevent="sortBy('order_status')" href="#" role="button">
-                            {{ __('Status') }}
+                            {{ __('Estado') }}
                             @include('inclues._sort-icon', ['field' => 'order_status'])
                         </a>
                     </th>
                     <th scope="col" class="align-middle text-center">
-                        {{ __('Action') }}
+                        {{ __('Accion') }}
                     </th>
                 </tr>
             </thead>
@@ -103,7 +103,7 @@
                         {{ $order->payment_type }}
                     </td>
                     <td class="align-middle text-center">
-                        {{ Number::currency($order->total, 'EUR') }}
+                        {{ Number::currency($order->total, 'USD') }}
                     </td>
                     <td class="align-middle text-center">
                         <x-status dot color="{{ $order->order_status === \App\Enums\OrderStatus::COMPLETE ? 'green' : 'orange' }}"
@@ -130,7 +130,7 @@
 
     <div class="card-footer d-flex align-items-center">
         <p class="m-0 text-secondary">
-            Showing <span>{{ $orders->firstItem() }}</span> to <span>{{ $orders->lastItem() }}</span> of <span>{{ $orders->total() }}</span> entries
+            Mostrar <span>{{ $orders->firstItem() }}</span> to <span>{{ $orders->lastItem() }}</span> of <span>{{ $orders->total() }}</span> entradas
         </p>
 
         <ul class="pagination m-0 ms-auto">
